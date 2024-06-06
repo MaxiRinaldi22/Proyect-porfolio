@@ -1,22 +1,28 @@
 @keyframes colorChange {
     0% {
-        color: #4caf50;
+        color: #64ac54;
     }
 
     25% {
-        color: #3d8f40;
+        color: #2a5521;
     }
 
     50% {
-        color: #235224;
+        color: #1b4414;
     }
     
     75% {
-        color: #3d8f40;
+        color: #2a5521;
     }
 
     100% {
-        color: #4caf50;
+        color: #64ac54;
     }
+}
+
+@keyframes glowing{
+    0% { background-position: 0 0 ;}
+    50% { background-position: 400% 0 ;}
+    100% { background-position: 0 0 ;}
 }
 
