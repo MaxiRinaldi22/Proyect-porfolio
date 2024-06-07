@@ -20,6 +20,14 @@ header {
     background: transparent;
 }
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* button */
+
 .btn {
     padding: 12px 30px;
     margin: 10px;
@@ -76,8 +84,6 @@ header {
 /* Fondo */
 
 .wrapper {
-    background: url('../img/La_Barra_\(172035767\).jpeg') no-repeat center center / cover;
-    width: 100%;
     height: 100vh;
     display: block;
     position: relative;
@@ -88,8 +94,7 @@ header {
     position: absolute;
     content: '';
     background-color: #000000;
-background-image: linear-gradient(43deg, #000000 0%, #333333 46%, #000000 100%);
-
+    background-image: linear-gradient(43deg, #000000 0%, #333333 46%, #000000 100%);
     width: 100%;
     height: 100vh;
     top: 0;
@@ -97,16 +102,15 @@ background-image: linear-gradient(43deg, #000000 0%, #333333 46%, #000000 100%);
     z-index: -1;
 }
 
-/* Texto principal */
+/* Texto home */
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px 10%;
-    color: #FFF;
+    color: whitesmoke;
     height: 80vh;
-   
 }
 
 .hero-info h2 {
@@ -117,8 +121,7 @@ background-image: linear-gradient(43deg, #000000 0%, #333333 46%, #000000 100%);
 .hero-info h1 {
     font-size: 40px;
     text-align: center;
-    margin: 20px;
-    
+    margin: 20px;  
 }
 
 .hero-info p {
@@ -127,12 +130,38 @@ background-image: linear-gradient(43deg, #000000 0%, #333333 46%, #000000 100%);
     line-height: 2;
     text-align: center;
     max-width: 600px;
-
 }
 
 .locale {
     animation-name: colorChange;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
+/* About */
+
+.container-about {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    align-items: center;
+    justify-content: center;
+   background-color: whitesmoke;
+   margin-top: 65px;
+    width: 100%;
+    height: 50vh;
+}
+
+.container-about p {
+    max-width: 500px;
+    font-size: 1.3rem;
+    margin: 15px;
+}
+
+.container-about h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 15px;
+}
