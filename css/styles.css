@@ -25,9 +25,14 @@ a {
     color: whitesmoke;
 }
 
-
+li {
+    text-decoration: none;
+    display: inline-block;
+    
+}
+        
 /* button */
-
+    
 .btn {
     padding: 12px 30px;
     margin: 10px;
