@@ -1,4 +1,10 @@
 /* General */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+:root {
+    --main-color: rgb(61, 61, 253);
+}
 
 * {
     box-sizing: border-box;
@@ -68,15 +74,21 @@ li:hover, a:hover {
     flex-direction: column;
     height: 100vh;
     margin-top: 150px;
+    
 }
 
 .hero-info h2 {
-    font-size: 35px;
+    font-size: 1.5rem;
     margin: 20px;
+    background-color: rgb(61, 61, 253);
+    padding: 15px 10px;
+    width: 200px;
+    display: inline;
 }
 .hero-info h1 {
     font-size: 40px;
-    margin: 20px;  
+    margin: 20px;
+    margin-top: 50px;  
 }
 
 .hero-info p {
@@ -98,13 +110,36 @@ li:hover, a:hover {
     transform: translateY(20px);
 }
 
-
-.locale {
-    animation-name: colorChange;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+.container-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
 }
 
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    animation: animacion 2.5s steps(35), tranasparent 1.5s step-end infinite alternate;
+    width: 9.7em;
+    font-family: "Inconsolata", monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid ;
+}
+
+
+
+@keyframes animacion{
+    from{
+        width: 0px;
+    }
+}
+
+@keyframes transparent {
+    50% {
+        border-color: transparent;
+    }
+}
 
 
 
