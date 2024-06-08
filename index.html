@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
     <title>Maximiliano Rinaldi</title>
     <!-- Custom styling -->
     <link rel="stylesheet" href="./css/animation.css" />
@@ -11,23 +15,22 @@
   <body>
     <div class="wrapper">
       <!-- Header -->
-      <header>
-        <ul>
-          <li class="btn"><a href="#hero-info">Home</a></li>
-          <li class="btn"><a href="#container-about">About</a></li>
-          <li class="btn"><a href="#hero-info">Home</a></li>
-          <li class="btn"><a href="#hero-info">Home</a></li>
-        </ul>
-        <!-- <button class="btn"><a href="#hero-info">Home</a></button>
-        <button class="btn"><a href="#container-about">About</a></button>
-        <button class="btn"><a href="">Projects</a></button>
-        <button class="btn"><a href="">Contact</a></button> -->
+
+      <header id="inicio">
+        <nav>
+          <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#container-about">SOBRE MI</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">CONTACTO</a></li>
+          </ul>
+        </nav>
       </header>
       <!-- End Header -->
 
       <!-- Main Content -->
       <div class="content">
-        <div class="hero-info">
+        <div class="hero-info" id="hero-info">
           <h2>Web Developer</h2>
           <h1 class="locale">Maximiliano Rinaldi</h1>
           <p>
@@ -37,69 +40,73 @@
             exercitationem tenetur perspiciatis.
           </p>
         </div>
+        <a href="#container-about"><i class='bx bx-chevron-down'></i></a>
       </div>
+      
+    </div>
+    <!-- End Main Content -->
 
-      <!-- End Main Content -->
+    <!-- About -->
+    <div class="container-about" id="container-about">
+      <h3>DESAROLLADOR DE APLICACIONES WEB</h3>
+      <h2>MI NOMBRE ES MAXIMILIANO RINALDI, FRONDTED DEVELOPER.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+        quasi est dolore deserunt eveniet nesciunt saepe cum iusto ea itaque
+        ratione nulla, illum exercitationem vitae quis ab dolores veniam!
+        Eveniet natus suscipit asperiores iste, quos nulla autem officiis
+        aliquid aliquam. Incidunt, maiores obcaecati eligendi distinctio
+        molestias nihil ullam.
+      </p>
+      <h4>Te initeresa saber mas de mi?</h4>
+      <button>VER MI BIBLIOGRAFIA</button>
+    </div>
+    <!-- End About -->
 
-      <!-- About -->
-      <div class="container-about">
-        <h2>About me:</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
-          quasi est dolore deserunt eveniet nesciunt saepe cum iusto ea itaque
-          ratione nulla, illum exercitationem vitae quis ab dolores veniam!
-          Eveniet natus suscipit asperiores iste, quos nulla autem officiis
-          aliquid aliquam. Incidunt, maiores obcaecati eligendi distinctio
-          molestias nihil ullam deleniti corporis.
-        </p>
+    <!-- Projects -->
+
+    <!-- End projects -->
+    <div class="container-project">
+      <div class="card">
+        <img src="img/lobo.jpg" alt="Un lobo" />
+        <div class="texto">
+          <p>Colmillo blanco</p>
+        </div>
       </div>
-      <!-- End About -->
-
-      <!-- Projects -->
-
-      <!-- End projects -->
-      <div class="container-project">
-        <div class="lobo">
-          <img src="img/lobo.jpg" alt="Un lobo" />
-          <div class="texto">
-            <p>Colmillo blanco</p>
-          </div>
+      <div class="card">
+        <img src="img/lobo.jpg" alt="Un lobo" />
+        <div class="texto">
+          <p>Colmillo blanco</p>
         </div>
-        <div class="lobo">
-          <img src="img/lobo.jpg" alt="Un lobo" />
-          <div class="texto">
-            <p>Colmillo blanco</p>
-          </div>
+      </div>
+      <div class="card">
+        <img src="img/lobo.jpg" alt="Un lobo" />
+        <div class="texto">
+          <p>Colmillo blanco</p>
         </div>
-        <div class="lobo">
-          <img src="img/lobo.jpg" alt="Un lobo" />
-          <div class="texto">
-            <p>Colmillo blanco</p>
-          </div>
+      </div>
+      <div class="card">
+        <img src="img/lobo.jpg" alt="Un lobo" />
+        <div class="texto">
+          <p>Colmillo blanco</p>
         </div>
-        <div class="lobo">
-          <img src="img/lobo.jpg" alt="Un lobo" />
-          <div class="texto">
-            <p>Colmillo blanco</p>
-          </div>
+      </div>
+      <div class="card">
+        <img src="img/lobo.jpg" alt="Un lobo" />
+        <div class="texto">
+          <p>Colmillo blanco</p>
         </div>
-        <div class="lobo">
-          <img src="img/lobo.jpg" alt="Un lobo" />
-          <div class="texto">
-            <p>Colmillo blanco</p>
-          </div>
+      </div>
+      <div class="card">
+        <img src="img/lobo.jpg" alt="Un lobo" />
+        <div class="texto">
+          <p>Colmillo blanco</p>
         </div>
-        <div class="lobo">
-          <img src="img/lobo.jpg" alt="Un lobo" />
-          <div class="texto">
-            <p>Colmillo blanco</p>
-          </div>
-        </div>
+      </div>
     </div>
 
-      <!-- Footer -->
-      <footer></footer>
-      <!-- End Footer -->
-    </div>
+    <!-- Footer -->
+    <footer></footer>
+    <!-- End Footer -->
   </body>
 </html>
