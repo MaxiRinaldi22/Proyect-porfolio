@@ -298,9 +298,11 @@ header  li:hover, a:hover {
     grid-column-end: 4;
 }
 
-/* Separador */
 
-.container-separator {
+
+/* Numbers */
+
+.container-num {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -343,6 +345,9 @@ header  li:hover, a:hover {
     font-size: .9rem;
     font-weight: 300;
 }
+
+
+
 
 
 /* Pre project */
