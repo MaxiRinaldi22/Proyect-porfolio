@@ -1,3 +1,29 @@
+
+// Header
+
+const header = document.querySelector('#inicio');
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('active', window.scrollY > 0);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Number
+
 const updateCount = el => {
     const value = parseInt(el.dataset.value);
     const increment = Math.ceil(value / 1000);

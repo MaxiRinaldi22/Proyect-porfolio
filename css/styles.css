@@ -32,6 +32,8 @@ header{
     padding: 20px;
     padding-top: 30px;
     width: 100%;
+    position: fixed;
+    transition: all .5s ease;
 }
 header nav ul li{
     display: inline-block;
@@ -50,6 +52,13 @@ header  li:hover, a:hover {
     text-decoration-thickness: .1rem;
     text-underline-offset: 1rem;
 }
+
+.active {
+    background-color: var(--main-color);
+    
+}
+
+
 
 /* Inicio */
 
@@ -70,12 +79,11 @@ header  li:hover, a:hover {
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     flex-direction: column;
     height: 100vh;
-    margin-top: 150px;
 }
 
 .hero-info h2 {
@@ -100,7 +108,8 @@ header  li:hover, a:hover {
 }
 
 .content a {
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 30px;
     transition: 0.5s ease-in-out;
 }
@@ -119,7 +128,6 @@ header  li:hover, a:hover {
 }
 
 .name {
-    font-family: 'Times New Roman', Times, serif;
     animation: animacion 2.5s steps(35), tranasparent 1.5s step-end infinite alternate;
     width: 9.7em;
     font-family: "Inconsolata", monospace;
