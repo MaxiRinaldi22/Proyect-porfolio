@@ -1,4 +1,7 @@
 
+
+
+
 // Header
 
 const header = document.querySelector('#inicio');
@@ -13,19 +16,32 @@ const updateCount = el => {
     const value = parseInt(el.dataset.value);
     const increment = Math.ceil(value / 1000);
     let initialValue = 0;
-    const inceaseCount = setInterval(() => {
+    const increaseCount = setInterval(() => {
         initialValue += increment;
         if (initialValue > value) {
             el.textContent = `+${value}`;
-            clearInterval(inceaseCount);
-            return
+            clearInterval(increaseCount);
+            return;
         }
-        el.textContent = `+${initialValue}`
+        el.textContent = `+${initialValue}`;
     }, 1);
 };
 
-const items = [...document.querySelectorAll('.number')];
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll('.number');
 
-items.forEach((item) => {
-    updateCount(item)
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                updateCount(entry.target);
+                observer.unobserve(entry.target); // Dejar de observar una vez iniciado
+            }
+        });
+    }, {
+        threshold: 0.1 // El 10% del elemento debe ser visible
+    });
+
+    items.forEach(item => {
+        observer.observe(item);
+    });
 });
