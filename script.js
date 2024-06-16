@@ -7,21 +7,6 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('active', window.scrollY > 0);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Number
 
 const updateCount = el => {

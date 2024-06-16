@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 :root {
-    --main-color: rgb(61, 61, 253);
+    --main-color: #049CE4;
+    /* --main-color: rgb(61, 61, 253); */
     --main-text: rgb(78, 78, 78);
 }
 
@@ -30,21 +31,21 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    padding-top: 30px;
     width: 100%;
     position: fixed;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
 
-header li, a {
+.nav li, a {
     text-decoration: none;
     color: whitesmoke;
     font-weight: 500;
     font-size: .8rem;
+    transition: all 1s ease;
 }
 
 header  li:hover, a:hover {
@@ -54,11 +55,13 @@ header  li:hover, a:hover {
 }
 
 .active {
-    background-color: var(--main-color);
-    
+    background-color: white;
+    border-bottom: 1px solid rgb(197, 197, 197);
 }
 
-
+.active .menu li a{
+    color: black;
+}
 
 /* Inicio */
 
@@ -89,7 +92,7 @@ header  li:hover, a:hover {
 .hero-info h2 {
     font-size: 1.5rem;
     margin: 20px;
-    background-color: rgb(61, 61, 253);
+    background-color: var(--main-color);
     padding: 15px 10px;
     width: 200px;
     display: inline;
@@ -133,7 +136,7 @@ header  li:hover, a:hover {
     font-family: "Inconsolata", monospace;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid ;
+    border-right: 3px solid var(--main-color);
 }
 
 @keyframes animacion{
@@ -217,7 +220,7 @@ header  li:hover, a:hover {
     color: whitesmoke;
     background-color: var(--main-color);
     width: 100%;
-    height: 10vh;
+    height: 12vh;
 }
 
 .container-space h3 {
@@ -353,9 +356,6 @@ header  li:hover, a:hover {
     font-size: .9rem;
     font-weight: 300;
 }
-
-
-
 
 
 /* Pre project */
