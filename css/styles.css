@@ -41,7 +41,7 @@ header nav ul li{
 
 .nav li, a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     font-weight: 500;
     font-size: .8rem;
     transition: all 1s ease;
@@ -56,6 +56,7 @@ header  li:hover, a:hover {
 .active {
     background-color: white;
     border-bottom: 1px solid rgb(221, 221, 221);
+    z-index: 4;
 }
 
 .active .menu li a{
@@ -67,7 +68,7 @@ header  li:hover, a:hover {
 .wrapper {
     width: 100%;
     height: 100vh;
-    color: whitesmoke;
+    color: white;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.8),
@@ -117,7 +118,7 @@ header  li:hover, a:hover {
 }
 
 .content a:hover {
-    color: whitesmoke;
+    color: white;
     font-size: 30px;
     transform: translateY(12px);
 }
@@ -161,7 +162,7 @@ header  li:hover, a:hover {
     width: 100%;
     height: 90vh;
     padding: 50px;
-   background-color: whitesmoke;
+    background-color: white;
 }
 
 .container-about h3 {
@@ -180,7 +181,7 @@ header  li:hover, a:hover {
 .container-about p {
     margin: 15px;
     max-width: 500px;
-    margin-bottom: 200px;
+   
     font-size: 1.1rem;
     color: var(--main-text);
 }
@@ -199,7 +200,7 @@ header  li:hover, a:hover {
    padding-right: 80px;
    font-weight: bold;
    font-size: 1rem;
-   background-color: whitesmoke;
+   background-color: white;
    border: 3px solid black;
    cursor: pointer;
 }
@@ -216,7 +217,7 @@ header  li:hover, a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     background-color: var(--main-color);
     width: 100%;
     height: 12vh;
@@ -369,7 +370,7 @@ header  li:hover, a:hover {
     width:  100%;
     height: 30vh;
     flex-direction: row;
-    color: whitesmoke;
+    color: white;
 }
 
 .info{
@@ -474,14 +475,14 @@ header  li:hover, a:hover {
 }
 
 .texto h4{
-    font-weight: 500;
+    font-weight: 200;
     font-size: 1rem;
     padding: 10px;
 }
 
 .texto p{
     font-size: .9rem;
-    font-weight: 500;
+    font-weight: 200;
     color: gray;
 }
 
@@ -492,11 +493,12 @@ header  li:hover, a:hover {
 
 .container-project {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-content: center;
     justify-items: center;
-    max-width: 100%;
+   
+
 }
 
 /* Hablemos */
@@ -512,8 +514,6 @@ header  li:hover, a:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
-   
-    
 }
 
 .container-hablemos-text p {
@@ -554,7 +554,7 @@ header  li:hover, a:hover {
     height: 15vh;
     display: flex;
     justify-content: space-evenly;
-   
+
 }
 
 .container-hablemos-info div {
@@ -568,4 +568,84 @@ header  li:hover, a:hover {
 
 .container-hablemos-info i {
     padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 200px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50vh;
+}
+
+
+footer h4 {
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+
+    
+}
+
+.footer-about {
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  
+}
+
+.footer-about p {
+    max-width: 300px;
+    color: var(--main-text);
+}
+
+.footer-porjects {
+    height: 150px;
+    width: 300px;
+   
+}
+
+.footer-porjects ul li {
+    list-style: none;
+    padding: 6px;
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+.footer-logos {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease-in;
+}
+
+.footer-logos i {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.footer-logos i:hover {
+    color: rgb(77, 77, 77);
+    transition: all .3s ease-in;
+}
+
+.footer-footer {
+    background-color: #252525;
+    color: #828282;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
