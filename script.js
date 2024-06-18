@@ -14,17 +14,17 @@ window.addEventListener('scroll', () => {
 
 const updateCount = el => {
     const value = parseInt(el.dataset.value);
-    const increment = Math.ceil(value / 1000);
+    const increment = Math.ceil(value / 100);
     let initialValue = 0;
     const increaseCount = setInterval(() => {
         initialValue += increment;
         if (initialValue > value) {
-            el.textContent = `+${value}`;
+            el.textContent = `${value}`;
             clearInterval(increaseCount);
             return;
         }
-        el.textContent = `+${initialValue}`;
-    }, 1);
+        el.textContent = `${initialValue}`;
+    }, 50);
 };
 
 document.addEventListener("DOMContentLoaded", function () {
